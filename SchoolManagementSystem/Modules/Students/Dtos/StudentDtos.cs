@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SchoolManagementSystem.Modules.Students.Dtos
 {
-	public class StudentDtos : Controller
+	public class TeacherDtos 
 	{
 		public class CreateStudentDto
 		{

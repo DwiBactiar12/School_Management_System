@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using SchoolManagementSystem.Modules.Students.Entities;
-using static SchoolManagementSystem.Modules.Students.Dtos.StudentDtos;
+using static SchoolManagementSystem.Modules.Students.Dtos.TeacherDtos;
 
 namespace SchoolManagementSystem.Modules.Students.Mappers
 {
@@ -18,7 +18,9 @@ namespace SchoolManagementSystem.Modules.Students.Mappers
 				.ForMember(dest => dest.Id, opt => opt.Ignore())
 				.ForMember(dest => dest.StudentId, opt => opt.Ignore())
 				.ForMember(dest => dest.CreatedAt, opt => opt.Ignore())
-				.ForMember(dest => dest.Enrollments, opt => opt.Ignore());
+				.ForMember(dest => dest.Enrollments, opt => opt.Ignore())
+				.ForAllMembers(opt => opt.Condition((src, dest, srcMember) => srcMember != null))
+				;
 
 			CreateMap<Student, StudentDto>()
 				.ForMember(dest => dest.FullName, opt => opt.MapFrom(src => $"{src.FirstName} {src.LastName}"))

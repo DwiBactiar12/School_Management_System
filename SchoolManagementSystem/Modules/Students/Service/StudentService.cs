@@ -4,7 +4,7 @@ using SchoolManagementSystem.Common.Responses;
 using SchoolManagementSystem.Common.Utilities;
 using SchoolManagementSystem.Modules.Students.Entities;
 using SchoolManagementSystem.Modules.Students.Repositories;
-using static SchoolManagementSystem.Modules.Students.Dtos.StudentDtos;
+using static SchoolManagementSystem.Modules.Students.Dtos.TeacherDtos;
 
 namespace SchoolManagementSystem.Modules.Students.Service
 {

@@ -3,7 +3,7 @@ using SchoolManagementSystem.Common.Helpers;
 using SchoolManagementSystem.Common.Responses;
 using SchoolManagementSystem.Common.Utilities;
 using SchoolManagementSystem.Modules.Students.Service;
-using static SchoolManagementSystem.Modules.Students.Dtos.StudentDtos;
+using static SchoolManagementSystem.Modules.Students.Dtos.TeacherDtos;
 
 namespace SchoolManagementSystem.Modules.Students
 {
