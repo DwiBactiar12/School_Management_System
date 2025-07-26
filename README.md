@@ -30,6 +30,31 @@ Sistem manajemen sekolah berbasis **ASP.NET Core Web API**, menyediakan fitur le
 
 ---
 
+## Membuat database di SUPABASE
+## 🧭 Langkah 1: Buat Akun Supabase
+
+1. Kunjungi: [https://supabase.com](https://supabase.com)
+2. Klik **"Start your project"** atau **"Sign In"**
+3. Login menggunakan akun **GitHub** atau **Email**
+
+---
+
+## 🧱 Langkah 2: Buat Project Baru
+
+1. Setelah login, klik tombol **“New Project”**
+2. Isi informasi berikut:
+   - **Organization**: Pilih atau buat organisasi baru
+   - **Name**: Nama project, misalnya `dbku`
+   - **Database Password**: Buat password yang kuat untuk database
+   - **Region**: Pilih lokasi server terdekat
+3. Klik **“Create new project”**
+
+## Langkah 3 : salin connection database
+1. Project Settings => Database => Klik di navbar tombol "Connect"=>pilih connection yang "Session pooler
+Shared Pooler"
+
+---
+
 ## 📦 Setup & Instalasi
 
 ### 1. Clone Repository
